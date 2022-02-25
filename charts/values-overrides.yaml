@@ -1,0 +1,13 @@
+argo-cd:
+  server:
+    config:
+      repositories: |
+        - type: helm
+          name: stable
+          url: https://charts.helm.sh/stable
+        - type: helm
+          name: argo-cd
+          url: https://argoproj.github.io/argo-helm
+        - type: git
+          name: argo-cd
+          url: https://github.com/jodybro/argocd
